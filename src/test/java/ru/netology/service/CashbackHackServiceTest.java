@@ -31,7 +31,7 @@ public class CashbackHackServiceTest {
     public void shouldReturnTheMissingAmountForBonusIfTheActualAmountEqualsTheExpected() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int sum = 2000;
-        int expected = 1000;
+        int expected = 0;
         int actual = cashbackHackService.remain(sum);
 
         Assert.assertEquals(expected, actual);
